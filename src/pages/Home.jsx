@@ -1,5 +1,6 @@
 import React from "react";
 import Body from "../components/Body";
+import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Intro from "../components/Intro";
 
@@ -9,6 +10,7 @@ const Home = () => {
       <Header />
       <Intro />
       <Body />
+      <Footer />
     </>
   );
 };

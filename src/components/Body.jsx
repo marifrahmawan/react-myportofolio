@@ -22,6 +22,9 @@ const Body = () => {
         <Card />
         <Card />
         <Card />
+        <Card />
+        <Card />
+        <Card />
       </CardWrapper>
     </Container>
   );

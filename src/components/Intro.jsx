@@ -7,11 +7,12 @@ const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  /* background: radial-gradient(
+  background: radial-gradient(
     30% 50% at 50% 100%,
     rgb(26, 26, 26) 0%,
     rgba(227, 204, 255, 0) 100%
-  ); */
+  );
+  margin-bottom: 40px;
 `;
 
 const Terminal = styled.div`
@@ -88,7 +89,7 @@ const Intro = () => {
         </TerminalTop>
         <TerminalBody>
           <TerminalBodyText>
-            Macrohard (R) Losedows NT(TM) [Version 0.0.1]
+            Macrohard (R) Losedows NT(TM) [Version 0.0.12]
           </TerminalBodyText>
           <TerminalBodyText>
             (c) 1969 Macrohard Corporation. All rights reserved.
