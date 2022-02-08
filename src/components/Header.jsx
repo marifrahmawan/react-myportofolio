@@ -13,6 +13,7 @@ const Menu = styled.ul`
   list-style: none;
   display: flex;
 `;
+
 const Logo = styled.span`
   color: #ffffff;
   font-size: 25px;

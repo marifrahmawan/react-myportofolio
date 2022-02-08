@@ -76,16 +76,34 @@ const TerminalBodyText = styled.p`
   font-size: 9px;
 `;
 
-const Typing = styled.div`
+const Typing = styled.span`
+  display: inline-block;
   font-size: 9px;
-  background-color: transparent;
   text-align: left;
   white-space: nowrap;
   overflow: hidden;
+  background-color: transparent;
 
-  animation: typewriter 4s steps(44) 1s 1 normal both;
+  animation: typewriter 3s steps(200) 1s 1 normal both;
 
   @keyframes typewriter {
+    from {
+      width: 0;
+    }
+    to {
+      width: 250px;
+    }
+  }
+`;
+
+const Skill = styled.ul`
+  list-style: none;
+  background-color: transparent;
+  white-space: nowrap;
+
+  animation: list 3s steps(200) 4s 1 normal both;
+
+  @keyframes list {
     from {
       width: 0;
     }
@@ -93,6 +111,13 @@ const Typing = styled.div`
       width: 100%;
     }
   }
+`;
+
+const SkillItems = styled.li`
+  color: ${(props) => props.color || "#ffffff"};
+  background-color: transparent;
+  margin: 10px 0;
+  overflow: hidden;
 `;
 
 const Right = styled.div`
@@ -299,7 +324,29 @@ const Intro = () => {
             </TerminalBodyText>
             <br />
             <TerminalBodyText>
-              <Typing>C:\Losedows{">"}Testing the animation</Typing>
+              C:\Losedow{">"}
+              <Typing>cd C:\user\mamad\skills.txt</Typing>
+            </TerminalBodyText>
+            <TerminalBodyText>
+              <Skill>
+                <SkillItems>
+                  ----------------------------------------------------------------------------------|
+                </SkillItems>
+                <SkillItems color="#eeff00"> 👾 JavaScript</SkillItems>
+                <SkillItems color="#00ff2a"> 👾 NodeJs</SkillItems>
+                <SkillItems color="#ffffff"> 👾 ExpressJS</SkillItems>
+                <SkillItems color="#68d7fb"> 👾 ReactJS</SkillItems>
+                <SkillItems color="#109fcf"> 👾 CSS</SkillItems>
+                <SkillItems color="#cf649a"> 👾 Styled Components</SkillItems>
+                <SkillItems color="#eeff00"> 👾 Python</SkillItems>
+                <SkillItems color="#cf649a"> 👾 SASS</SkillItems>
+                <SkillItems color="#47ad3d"> 👾 MongoDB</SkillItems>
+                <SkillItems color="#860000"> 👾 MongooseJS</SkillItems>
+                <SkillItems color="#fba41b"> 👾 MySql</SkillItems>
+                <SkillItems>
+                  ----------------------------------------------------------------------------------|
+                </SkillItems>
+              </Skill>
             </TerminalBodyText>
           </TerminalBody>
         </Terminal>
