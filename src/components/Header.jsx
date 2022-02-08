@@ -27,6 +27,12 @@ const MenuItem = styled.li`
   margin-right: 30px;
   color: #e5e5e5;
   cursor: pointer;
+  transition: all 0.3s ease;
+
+  :hover {
+    color: #ff9100;
+    transition: all 0.3s ease;
+  }
 `;
 
 const Header = () => {
