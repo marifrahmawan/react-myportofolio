@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const Container = styled.div`
@@ -28,6 +29,11 @@ const MenuItem = styled.li`
   margin-right: 30px;
   color: #e5e5e5;
   cursor: pointer;
+`;
+
+const Nav = styled(Link)`
+  text-decoration: none;
+  color: #e5e5e5;
   transition: all 0.3s ease;
 
   :hover {
@@ -43,8 +49,12 @@ const Header = () => {
         MA<span style={{ color: "#ff9100" }}>MAD</span>
       </Logo>
       <Menu>
-        <MenuItem>HOME</MenuItem>
-        <MenuItem>ABOUT</MenuItem>
+        <MenuItem>
+          <Nav to="/">HOME</Nav>
+        </MenuItem>
+        <MenuItem>
+          <Nav to="/about">ABOUT</Nav>
+        </MenuItem>
       </Menu>
     </Container>
   );

@@ -84,7 +84,7 @@ const Typing = styled.span`
   overflow: hidden;
   background-color: transparent;
 
-  animation: typewriter 3s steps(200) 1s 1 normal both;
+  animation: typewriter 3s steps(200) 0s 1 normal both;
 
   @keyframes typewriter {
     from {
@@ -101,7 +101,7 @@ const Skill = styled.ul`
   background-color: transparent;
   white-space: nowrap;
 
-  animation: list 3s steps(200) 4s 1 normal both;
+  animation: list 1s steps(200) 4s 1 normal both;
 
   @keyframes list {
     from {
@@ -329,7 +329,7 @@ const Intro = () => {
             </TerminalBodyText>
             <TerminalBodyText>
               <Skill>
-                <SkillItems>
+                <SkillItems style={{ marginBottom: "20px" }}>
                   ----------------------------------------------------------------------------------|
                 </SkillItems>
                 <SkillItems color="#eeff00"> 👾 JavaScript</SkillItems>
@@ -343,7 +343,7 @@ const Intro = () => {
                 <SkillItems color="#47ad3d"> 👾 MongoDB</SkillItems>
                 <SkillItems color="#860000"> 👾 MongooseJS</SkillItems>
                 <SkillItems color="#fba41b"> 👾 MySql</SkillItems>
-                <SkillItems>
+                <SkillItems style={{ marginTop: "20px" }}>
                   ----------------------------------------------------------------------------------|
                 </SkillItems>
               </Skill>
@@ -355,9 +355,43 @@ const Intro = () => {
         <Social>
           <ContactMeText>CONTACT ME </ContactMeText>
           <SocialBox>
-            <SocialItem>{InstagramLogo}</SocialItem>
-            <SocialItem>{TwitterLogo}</SocialItem>
-            <SocialItem>{GithubLogo}</SocialItem>
+            <SocialItem>
+              <a
+                href="https://instagram.com/_arifrahmawan"
+                target="_blank"
+                rel="noreferrer"
+                style={{
+                  backgroundColor: "transparent",
+                }}
+              >
+                {InstagramLogo}
+              </a>
+            </SocialItem>
+            <SocialItem>
+              <a
+                href="https://twitter.com/rifffqqq"
+                target="_blank"
+                rel="noreferrer"
+                style={{
+                  backgroundColor: "transparent",
+                }}
+              >
+                {TwitterLogo}
+              </a>
+            </SocialItem>
+            <SocialItem>
+              {" "}
+              <a
+                href="https://github.com/marifrahmawan"
+                target="_blank"
+                rel="noreferrer"
+                style={{
+                  backgroundColor: "transparent",
+                }}
+              >
+                {GithubLogo}
+              </a>
+            </SocialItem>
           </SocialBox>
         </Social>
       </Right>
